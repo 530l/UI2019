@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.r.ui2019.canvas_draw_api.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addX" />
+
+    <com.r.ui2019.canvas_draw_api.StegePointProcessView
+        android:id="@+id/stegePointProcessView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/color_grey_400"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.r.ui2019.canvas_draw_api.ProcessHorView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ada_hor_process"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>
